@@ -21,7 +21,7 @@
 /*
 * MultiCol-SLAM is based on ORB-SLAM2 which was also released under GPLv3
 * For more information see <https://github.com/raulmur/ORB_SLAM2>
-* Raúl Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
+* Raï¿½l Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
 */
 
 
@@ -867,9 +867,9 @@ void mdBRIEFextractorOct::ComputeKeyPointsOctTree(
 
 	const double W = 30.0;
 	Ptr<AgastFeatureDetector> ag = 
-		AgastFeatureDetector::create(fastThreshold, true, fastAgastType);
+		AgastFeatureDetector::create(fastThreshold, true, cv::AgastFeatureDetector::AGAST_7_12s);
 	Ptr<FastFeatureDetector> fd = 
-		FastFeatureDetector::create(fastThreshold, true, fastAgastType);
+		FastFeatureDetector::create(fastThreshold, true, cv::FastFeatureDetector::TYPE_9_16);
 
 	for (int level = 0; level < numlevels; ++level)
 	{

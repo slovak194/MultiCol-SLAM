@@ -21,7 +21,7 @@
 /*
 * MultiCol-SLAM is based on ORB-SLAM2 which was also released under GPLv3
 * For more information see <https://github.com/raulmur/ORB_SLAM2>
-* Raúl Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
+* Raï¿½l Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
 */
 
 #ifndef MDBRIEFEXTRACTOROCT_H
@@ -29,7 +29,7 @@
 
 #include <vector>
 #include <list>
-#include <opencv/cv.h>
+#include <opencv2/opencv.hpp>
 #include <opencv2/opencv.hpp>
 #include "cam_model_omni.h"
 

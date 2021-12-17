@@ -1,6 +1,6 @@
 // The original version was released under the following license
 /**
-* Copyright (C) 2014-2016 Raúl Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
+* Copyright (C) 2014-2016 RaÃºl Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
 * For more information see <https://github.com/raulmur/ORB_SLAM2>
 *
 * ORB-SLAM2 is free software: you can redistribute it and/or modify
@@ -112,7 +112,7 @@ int main(int argc, char **argv)
 		std::vector<bool> loaded(nrCams);
 		for (int c = 0; c < nrCams; ++c)
 		{
-			imgs[c] = cv::imread(imgFilenames[c][ni], CV_LOAD_IMAGE_GRAYSCALE);
+			imgs[c] = cv::imread(imgFilenames[c][ni], cv::IMREAD_GRAYSCALE);
 			if (imgs[c].empty())
 			{
 				cerr << endl << "Failed to load image at: " << imgFilenames[c][ni] << endl;

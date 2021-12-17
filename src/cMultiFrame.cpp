@@ -1,3 +1,5 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "openmp-use-default-none"
 /**
 * This file is part of MultiCol-SLAM
 *
@@ -362,3 +364,4 @@ namespace MultiColSLAM
 		}
 	}
 }
+#pragma clang diagnostic pop

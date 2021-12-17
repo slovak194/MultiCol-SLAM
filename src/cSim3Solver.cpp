@@ -26,7 +26,7 @@
 
 #include <vector>
 #include <cmath>
-#include <opencv/cv.h>
+#include <opencv2/opencv.hpp>
 //#include <ros/ros.h>
 
 #include "cSim3Solver.h"

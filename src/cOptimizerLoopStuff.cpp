@@ -312,7 +312,7 @@ namespace MultiColSLAM
 			int MKFid = pMKF->mnId;
 
 			// if this MKF was already corrected
-			cLoopClosing::KeyFrameAndPose::const_iterator it = CorrectedSim3.find(pMKF);
+			auto it = CorrectedSim3.find(pMKF);
 			if (it != CorrectedSim3.end())
 			{
 				vScw[MKFid] = it->second;

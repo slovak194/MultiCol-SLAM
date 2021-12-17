@@ -21,7 +21,7 @@
 /*
 * MultiCol-SLAM is based on ORB-SLAM2 which was also released under GPLv3
 * For more information see <https://github.com/raulmur/ORB_SLAM2>
-* Raúl Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
+* Raï¿½l Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
 */
 
 #ifndef LOOPCLOSING_H
@@ -47,8 +47,7 @@ namespace MultiColSLAM
 	public:
 
 		typedef std::pair<std::set<cMultiKeyFrame*>, int> ConsistentGroup;
-		typedef std::map<cMultiKeyFrame*, g2o::Sim3, std::less<cMultiKeyFrame*>,
-			Eigen::aligned_allocator<std::pair<const cMultiKeyFrame*, g2o::Sim3> > > KeyFrameAndPose;
+		typedef std::map<cMultiKeyFrame*, g2o::Sim3, std::less<cMultiKeyFrame*>> KeyFrameAndPose;
 
 		cLoopClosing(cMap* pMap, cMultiKeyFrameDatabase* pDB, ORBVocabulary* pVoc);
 

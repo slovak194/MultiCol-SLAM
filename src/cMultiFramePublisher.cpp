@@ -117,7 +117,7 @@ namespace MultiColSLAM
 			{
 				ims[c] = mImages[c];
 				if (ims[c].channels() < 3)
-					cvtColor(ims[c], ims[c], CV_GRAY2BGR);
+					cvtColor(ims[c], ims[c], cv::COLOR_GRAY2BGR);
 
 				//Draw
 				if (state == cTracking::INITIALIZING) //INITIALIZING
